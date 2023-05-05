@@ -7,7 +7,7 @@ from flask import render_template
 
 def home():
     # return "<h1>Hello world - home page with more ...<h1>"
-    return render_template("index.html")
+    return render_template("index.html", login=True)
 
 def contact():
-    return "<h1>Hello world - contact page<h1>"
+    return render_template("contact.html")
