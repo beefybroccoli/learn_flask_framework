@@ -1,0 +1,3 @@
+flask run --debug
+source ./bin/activate
+deactivate
