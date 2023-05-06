@@ -1,15 +1,13 @@
 from flask import Flask
+from config import Config
+from flask_mongoengine import MongoEngine
+
+
 
 app = Flask(__name__)
+app.config.from_object(Config)
 
-# @app.route("/")
-# @app.route("/home")
-# @app.route("/contact")
-
-# def home():
-#     return "<h1>Hello world - home page with more ...<h1>"
-
-# def contact():
-#     return "<h1>Hello world - contact page<h1>"
+db = MongoEngine()
+db.init_app(app)
 
 from application import routes
