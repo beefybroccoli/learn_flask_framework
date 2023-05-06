@@ -1,1 +1,1 @@
-https://www.linkedin.com/learning/full-stack-web-development-with-flask/creating-navigation-links-and-route-patterns?autoSkip=true&autoplay=true&resume=false
+https://www.linkedin.com/learning/full-stack-web-development-with-flask/connecting-to-the-database?autoSkip=true&autoplay=true&resume=false
