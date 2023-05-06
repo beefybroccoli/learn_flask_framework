@@ -1,3 +1,4 @@
 flask run --debug
 source ./bin/activate
 deactivate
+pip freeze > requirement.txt
