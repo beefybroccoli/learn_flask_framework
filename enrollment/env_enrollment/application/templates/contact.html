@@ -1,9 +1,19 @@
 {% extends "layout.html" %} {% block content %}
-<div class="row">
-  <div class="col-md-12 text-center">
-    <h1>Welcome to Universal Tech Academy.</h1>
-    <h2>Contact Page</h2>
-  </div>
+<h2>Contact Form</h2>
+
+<div class="container">
+  <form method="POST">
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required />
+    <br />
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required />
+    <br />
+    <label for="comment"><b>Comment</b></label>
+    <input type="text" placeholder="Enter Comment" name="comment" required />
+    <br class="clear" />
+    <input class="btn-submit" type="submit" name="submit" />
+  </form>
 </div>
 
 {% endblock %}
