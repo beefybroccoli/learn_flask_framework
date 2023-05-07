@@ -52,9 +52,9 @@ class User(db.Document):
     email = db.StringField( max_length = 50)
     password = db.StringField( max_length = 50)
 
-@app.route("/user")
-def user():
-    User(user_id=1, first_name="Chris", last_name="James", email="christ_james@yahoo.com",password="123").save()
-    User(user_id=2, first_name="John", last_name="James", email="John_james@yahoo.com",password="123").save()
-    users = User.objects.all()
+@app.route("/api/users")
+def users():
+    # User(user_id=3, first_name="Chrissie", last_name="James", email="christ_james@yahoo.com",password="123").save()
+    # User(user_id=4, first_name="Johnathon", last_name="James", email="John_james@yahoo.com",password="123").save()
+    # users = User.objects.all()
     return render_template("user.html", users=users)
